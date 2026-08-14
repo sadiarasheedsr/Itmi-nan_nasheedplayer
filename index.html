@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Itmi'nan</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<!-- ================= MAIN CONTAINER ================= -->
+<div class="container">
+    <aside class="sidebar">
+<div class="logo">
+</div>
+<div class="search">
+    <input type="text" placeholder="Search music..." id="searchInput">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <!-- Search Results -->
+<div id="searchResults" class="search-results"></div>
+</div>
+    <h4>Discover</h4>
+    <ul>
+    <li class="active">
+    <a href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+    <li><a href="#nasheed"><i class="fa-solid fa-fire"></i><span>Nasheed</span></a></li>
+    </ul>
+    <h4>Categories</h4>
+<div class="category-list">
+    <span class="category active-category" data-category="All">All</span>
+    <span class="category" data-category="Gratitude">Gratitude</span>
+    <span class="category" data-category="Devotion">Devotion</span>
+    <span class="category" data-category="Trust">Trust</span>
+    <span class="category" data-category="Meditation">Meditation</span>
+    <span class="category" data-category="Family">Family</span>
+</div>
+<!-- ================= MUSIC PLAYER ================= -->
+<div class="music-player">
+<!-- Song Information -->
+<div class="player-left">
+<div class="player-music-icon">
+    <i class="fa-solid fa-music"></i>
+</div>
+<div class="song-details">
+    <span class="playing-label">NOW PLAYING</span>
+    <h3 id="song-title">Duaon Me Meri</h3>
+    <p id="song-artist">Ayesha Abdul Basith</p>
+</div>
+</div>
+<!-- Progress + Controls -->
+<div class="player-center">
+<div class="progress-area">
+    <span id="current">0:00</span>
+    <input
+    type="range"
+    id="progress"
+    value="0"
+    min="0"
+    max="100">
+    <span id="duration">0:00</span>
+</div>
+<div class="controls">
+    <button id="prev" title="Previous">
+    <i class="fa-solid fa-backward-step"></i></button>
+    <button id="play" title="Play">
+    <i class="fa-solid fa-play"></i></button>
+    <button id="next" title="Next">
+    <i class="fa-solid fa-forward-step"></i>
+    </button>
+</div>
+</div>
+<!-- Volume + Theme -->
+<div class="player-right">
+<div class="volume-control">
+    <i class="fa-solid fa-volume-high"></i>
+    <input
+    type="range"
+    id="volume"
+    min="0"
+    max="100"
+    value="80">
+</div>
+    <button
+    id="theme"
+    title="Toggle theme">
+    <i class="fa-solid fa-moon"></i>
+    </button>
+</div>
+</div>
+</aside>
+<!-- ================= MAIN CONTENT ================= -->
+    <main class="main">
+<div class="topbar">
+<div>
+    <h1 id="home">Itmi'nan</h1>
+    <p>Vocals-only nasheed player — no instrumental music</p>
+</div>
+<div class="profile">
+    <img src="download.jpeg" alt="Profile">
+</div>
+</div>
+<!-- ================= HERO ================= -->
+    <section class="hero">
+<div class="hero-text">
+    <span class="hero-small">✨ Your daily soundtrack</span>
+    <h1>Feel The<span>Peace</span></h1>
+    <p>Discover uplifting nasheeds, explore inspiring vocal artists, and enjoy your favorite spiritual melodies in one place.</p>
+<div class="hero-buttons">
+</div>
+</div>
+<div class="hero-image">
+<div class="music-circle">
+    <i class="fa-solid fa-music"></i>
+</div>
+<div class="floating-note note-one">♪
+</div>
+<div class="floating-note note-two">♫
+</div>
+<div class="floating-note note-three">♪
+</div>
+</div>
+</section>
+<!-- ================= NASHEED LIST ================= -->
+<section class="section" id="nasheed">
+<div class="section-title">
+<div>
+    <span class="section-small">Listen & Enjoy</span>
+    <h2>🎵 Nasheeds</h2>
+</div>
+</div>
+<div class="nasheed-list">
+<div class="nasheed-item" data-category="Gratitude">
+<div class="nasheed-number">01
+</div>
+<div class="nasheed-icon">
+    <i class="fa-solid fa-music"></i>
+</div>
+<div class="nasheed-info">
+    <h3>Duaon me meri</h3>
+    <p>Ayesha Abdul Basith</p>
+</div>
+    <span class="nasheed-category">Gratitude</span>
+    <button class="nasheed-play" data-song="0">
+    <i class="fa-solid fa-play"></i>
+    </button>
+</div>
+<div class="nasheed-item" data-category="Trust">
+<div class="nasheed-number"> 02
+</div>
+<div class="nasheed-icon">
+    <i class="fa-solid fa-music"></i>
+</div>
+<div class="nasheed-info">
+    <h3>Muhammad Nabinah </h3>
+    <p>Ayesha Abdul Basith</p>
+</div>
+    <span class="nasheed-category">Trust</span>
+    <button class="nasheed-play" data-song="1">
+    <i class="fa-solid fa-play"></i>
+    </button>
+</div>
+<div class="nasheed-item" data-category="Devotion">
+<div class="nasheed-number">03
+</div>
+<div class="nasheed-icon">
+    <i class="fa-solid fa-music"></i>
+</div>
+<div class="nasheed-info">
+    <h3>Hum na ankhon se dekha nahi ha magar</h3>
+    <p>Mohamed Tarek</p>
+</div>
+    <span class="nasheed-category">Devotion</span>
+    <button class="nasheed-play" data-song="2">
+    <i class="fa-solid fa-play"></i>
+    </button>
+</div>
+<div class="nasheed-item" data-category="Meditation">
+<div class="nasheed-number">04
+</div>
+<div class="nasheed-icon">
+    <i class="fa-solid fa-music"></i>
+</div>
+<div class="nasheed-info">
+    <h3>Qalbi fil Madinah</h3>
+    <p>Maher Zain & Harris J</p>
+</div>
+    <span class="nasheed-category">Meditation</span>
+    <button class="nasheed-play" data-song="3">
+    <i class="fa-solid fa-play"></i>
+    </button>
+</div>
+<div class="nasheed-item" data-category="Family">
+<div class="nasheed-number">05
+</div>
+<div class="nasheed-icon">
+    <i class="fa-solid fa-music"></i>
+</div>
+<div class="nasheed-info">
+    <h3>Kun Anta</h3>
+    <p>Humood Alkhudher</p>
+</div>
+    <span class="nasheed-category">Family</span>
+    <button class="nasheed-play" data-song="4">
+    <i class="fa-solid fa-play"></i>
+    </button>
+</div>
+</div>
+</section>
+<!-- ================= AUDIO ================= -->
+<audio id="audio"></audio>
+<!-- ================= JAVASCRIPT ================= -->
+<script src="script.js"></script>
+</body>
+</html>
