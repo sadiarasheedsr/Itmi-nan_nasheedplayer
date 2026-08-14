@@ -2,6 +2,10 @@
 
 A clean, responsive, vocals-only nasheed player built with **HTML, CSS, and JavaScript**. Itmi'nan provides a peaceful music-player experience with search, category filtering, playback controls, volume control, and light/dark mode.
 
+---
+## 🚀 Live Demo
+👉https://sadiarasheedsr.github.io/Itmi-nan_nasheedplayer/
+
 ## Features
 
 - 🎵 Vocals-only nasheed player
